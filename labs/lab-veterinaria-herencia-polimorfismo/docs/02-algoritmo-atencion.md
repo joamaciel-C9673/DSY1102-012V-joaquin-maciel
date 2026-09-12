@@ -1,0 +1,1 @@
+Primero al llegar un nuevo animal se identifica que tipo es (perro,gato, etc), se conseguiria la mayor cantidad de datos base ya sea por examenes o por el dueño/rescatista, una vez una idea de que esta pasando se pasaria a la atencion de lo que sea necesario (recomendar medicamentos, tratar una herida, etc) una vez finalicado se haria el cobro al dueño y se les dejaria ir
