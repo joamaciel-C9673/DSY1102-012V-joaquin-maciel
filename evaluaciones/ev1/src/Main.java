@@ -13,7 +13,3 @@ public class Main {
         System.out.println(bicicleta.getPesoKg());
     }
 }
-/**
- * gracias a desarrolarlo de esta manera en relacion a objetos permite identificar mucho mas facil donde puede quedar el
- * error en el codigo o que parte esta muy sobrecargada
- */

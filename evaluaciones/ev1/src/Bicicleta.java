@@ -1,10 +1,10 @@
-public class Bicicleta {
+public abstract class Bicicleta {
 
     private String codigoBicicleta;
     private int anioFabricacion;
     private double pesoKg;
 
-    Bicicleta(String codigoBicicleta, int anioFabricacion, double pesoKg) {
+    public Bicicleta(String codigoBicicleta, int anioFabricacion, double pesoKg) {
         this.codigoBicicleta = codigoBicicleta;
         this.anioFabricacion = anioFabricacion;
         this.pesoKg = pesoKg;
@@ -25,7 +25,7 @@ public class Bicicleta {
     public void setCodigoBicicleta(String codigoBicicleta) {
         if (codigoBicicleta != null && !codigoBicicleta.isEmpty()) {
             this.codigoBicicleta = codigoBicicleta;
-        } else  {
+        } else {
             throw new IllegalArgumentException("el codigo de bicicleta no puede ser nulo o vacio");
         }
     }
@@ -45,4 +45,6 @@ public class Bicicleta {
             throw new IllegalArgumentException("el peso de kg no puede ser menor o igual a 0");
         }
     }
+
+    public abstract double calcularCostoMantencion();
 }
