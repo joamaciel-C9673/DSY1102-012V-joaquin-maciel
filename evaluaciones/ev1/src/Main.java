@@ -1,15 +1,21 @@
 public class Main {
+
     public static void main(String[] args) {
 
-        Bicicleta bicicleta = new Bicicleta("320b",24,123);
-        bicicleta.setCodigoBicicleta("032B");
+        BicicletaElectrica electrica = new BicicletaElectrica(
+                "BE01",
+                2025,
+                20,
+                80,
+                true
+        );
 
-        bicicleta.setAnioFabricacion(2015);
+        System.out.println("Garantia inicial:");
+        System.out.println(electrica.tieneGarantiaExtendidaActiva());
 
-        bicicleta.setPesoKg(15);
+        electrica.activarGarantiaExtendida();
 
-        System.out.println(bicicleta.getCodigoBicicleta());
-        System.out.println(bicicleta.getAnioFabricacion());
-        System.out.println(bicicleta.getPesoKg());
+        System.out.println("Garantia despues de activar:");
+        System.out.println(electrica.tieneGarantiaExtendidaActiva());
     }
 }
