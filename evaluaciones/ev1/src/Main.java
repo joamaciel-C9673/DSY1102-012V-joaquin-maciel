@@ -2,20 +2,29 @@ public class Main {
 
     public static void main(String[] args) {
 
-        BicicletaElectrica electrica = new BicicletaElectrica(
+        GestorTallerBicicletas gestor =
+                new GestorTallerBicicletas();
+
+        Bicicleta electrica = new BicicletaElectrica(
                 "BE01",
                 2025,
                 20,
                 80,
-                true
+                false
         );
 
-        System.out.println("Garantia inicial:");
-        System.out.println(electrica.tieneGarantiaExtendidaActiva());
+        Bicicleta montanya = new BicicletaMontanya(
+                "BM01",
+                2025,
+                15,
+                2
+        );
 
-        electrica.activarGarantiaExtendida();
+        gestor.registrar(electrica);
+        gestor.registrar(montanya);
 
-        System.out.println("Garantia despues de activar:");
-        System.out.println(electrica.tieneGarantiaExtendidaActiva());
+        gestor.listarBicicletas();
+
+        gestor.listarCostosMantencion();
     }
 }
