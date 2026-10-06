@@ -71,6 +71,7 @@ public class BicicletaElectrica extends Bicicleta
                 ", pesoKg=" + getPesoKg() +
                 ", autonomiaKm=" + autonomiaKm +
                 ", bateriaCertificada=" + bateriaCertificada +
+                ", garantiaExtendidaActiva=" + garantiaExtendidaActiva +
                 '}';
     }
 }
